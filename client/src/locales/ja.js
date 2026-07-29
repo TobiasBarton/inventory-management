@@ -6,6 +6,7 @@ export default {
     orders: '注文',
     finance: '財務',
     demandForecast: '需要予測',
+    restocking: '再発注',
     companyName: '触媒コンポーネンツ',
     subtitle: '在庫管理システム'
   },
@@ -106,6 +107,8 @@ export default {
     title: '注文',
     description: '顧客注文の表示と管理',
     allOrders: 'すべての注文',
+    submittedOrders: '発注済み注文',
+    noSubmittedOrders: 'まだ再発注は行われていません',
     totalOrders: '総注文数',
     totalRevenue: '総収益',
     avgOrderValue: '平均注文額',
@@ -125,7 +128,8 @@ export default {
       totalValue: '合計金額',
       status: 'ステータス',
       expectedDelivery: '予定配達日',
-      actualDelivery: '実際の配達日'
+      actualDelivery: '実際の配達日',
+      leadTime: 'リードタイム'
     }
   },
 
@@ -186,6 +190,25 @@ export default {
       trend: 'トレンド',
       period: '期間'
     }
+  },
+
+  // Restocking
+  restocking: {
+    title: '再発注',
+    description: '予算を設定し、需要予測に基づく再発注の提案を確認する',
+    budgetLabel: '利用可能な予算',
+    budgetUsed: '使用済み予算',
+    budgetRemaining: '残り予算',
+    itemsRecommended: '推奨品目数',
+    recommendedItems: '推奨品目',
+    urgency: '緊急度',
+    suggestedQuantity: '推奨数量',
+    unitCost: '単価',
+    lineTotal: '小計',
+    placeOrder: '発注する',
+    orderPlaced: '注文が正常に送信されました',
+    orderFailed: '注文の送信に失敗しました',
+    noItemsRecommended: '現在の予算に収まる品目がありません'
   },
 
   // Filters
